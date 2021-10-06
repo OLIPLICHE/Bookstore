@@ -1,3 +1,7 @@
+# BookStore
+
+I lay foundations for Bookstore website. I create a React and Redux app. I structure the files using the "feature folder" approach. Also I set up routing using React Router.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +72,30 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+- HTML5, 
+- CSS3 
+- JS
+- React and redux
+
+## Live Demo
+[Live Demo Link]( https://olipliche.github.io/Bookstore/)
+
+## Author
+👤 **Olipliche Mavoungou Paka**
+- GitHub: [https://github.com/OLIPLICHE)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/olipliche-paka-mavoungou/)
+
+## 🤝 Contributing
+Contributions, issues, and feature requests are welcome!
+
+## Show your support
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+- Hat tip to anyone whose code was used
+- Inspiration
+
+## 📝 License
+This project is [Microverse](https://www.microverse.org/) licensed.

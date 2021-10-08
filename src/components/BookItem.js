@@ -2,10 +2,10 @@ import React from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import PropTypes from 'prop-types';
 
-const BookItem = ({ book }) => (
+const BookItem = ({ book, removeBookFromStoreProps }) => (
   <li key={book.id}>
     <p>
-      {book.author}
+      {book.title}
       <span>
         {' ' }
         {' '}
@@ -14,7 +14,14 @@ const BookItem = ({ book }) => (
         { book.title}
       </span>
     </p>
-    <button type="button">Remove</button>
+    <button
+      type="button"
+      onClick={() => {
+        removeBookFromStoreProps(book.id);
+      }}
+    >
+      Remove
+    </button>
   </li>
 );
 
@@ -24,6 +31,8 @@ BookItem.propTypes = {
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
   }).isRequired,
+
+  removeBookFromStoreProps: PropTypes.func.isRequired,
 };
 
 export default BookItem;

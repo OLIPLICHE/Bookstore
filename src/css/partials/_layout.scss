@@ -1,5 +1,5 @@
 main {
-  padding: 0 6.2rem;
+  padding: 2.5rem 6.2rem 5rem 6.2rem;
 }
 
 .container {
@@ -82,7 +82,6 @@ main {
 .add-form-header {
   @include font($montserrat, 1.25rem, $bold);
 
-  color: rgba($secondary, 0.5);
   margin-bottom: 1.188rem;
 }
 
@@ -91,6 +90,10 @@ main {
 
   #{&}__left {
     @include flex(100%);
+
+    padding-top: 3px;
+    margin-right: 2.125rem;
+    gap: 2.125rem;
   }
 
   #{&}__right {
@@ -251,4 +254,12 @@ main {
 
 .book-item__right > .v-divider {
   height: 4.375rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  padding: 0.813rem 1.063rem;
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
 }

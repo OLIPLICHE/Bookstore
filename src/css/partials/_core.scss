@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto+Slab:wght@300;400;700&display=swap');
+
+:root {
+  font-size: 16px;
+}
+//variables
+//--colors
+$secondary: #121212;
+$primary: #0290ff;
+$neutral: #fff;
+$background: #fafafa;
+$border: #e8e8e8;
+//--font-family
+$roboto-slab: 'Roboto Slab', serif;
+$montserrat: 'Montserrat', sans-serif;
+
+//--font-weight
+$bold: 700;
+$regular: 400;
+$light: 300;
+//mixins
+@mixin box-sizing($type) {
+  -webkit-box-sizing: $type;
+  -moz-box-sizing: $type;
+  box-sizing: $type;
+}
+
+@mixin font($family, $size, $weight) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin box-shadow($h: 10px, $v: 10px, $b: 0, $s: 0, $c: #000000) {
+  -webkit-box-shadow: $h $v $b $s $c;
+  -moz-box-shadow: $h $v $b $s $c;
+  box-shadow: $h $v $b $s $c;
+}
+
+@mixin flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex: $values;
+  -ms-flex: $values;
+  -webkit-flex: $values;
+  flex: $values;
+}
+
+@mixin flex-order($order) {
+  -webkit-box-ordinal-group: $order; // old
+  -moz-box-ordinal-group: $order; // old
+  -ms-flex-order: $order; // ie
+  -webkit-order: $order; // new
+  order: $order; // new
+}
+
+@mixin flex-direction($direction) {
+  @if $direction == column {
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+
+  @else {
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@mixin justify-content($position) {
+  @if $position == space-between {
+    justify-content: space-between;
+  }
+
+  @else if $position == center {
+    justify-content: center;
+  }
+}
+
+@mixin align-items($position) {
+  @if $position == center {
+    align-items: center;
+  }
+}
+
+@mixin break-point($point) {
+  @if $point == desktop {
+    @media only screen and (max-width: 50em) {
+      @content;
+    }
+  }
+
+  @else if $point == tablet {
+    @media only screen and (max-width: 20em) {
+      @content;
+    }
+  }
+
+  @else if $point == mobile {
+    @media only screen and (max-width: 20em) {
+      @content;
+    }
+  }
+}
+
+@mixin btn(
+  $font,
+  $font-size,
+  $font-color,
+  $padding,
+  $transition-speed,
+  $border,
+  $radius,
+  $background
+) {
+  border: $border;
+  display: inline-block;
+  background-color: $background;
+  text-decoration: none;
+  font-family: $font;
+  font-size: $font-size;
+  color: $font-color;
+  padding: $padding;
+  border-radius: $radius;
+  -webkit-transition: color $transition-speed, background $transition-speed;
+  transition: color $transition-speed, background $transition-speed;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: $background;
+}

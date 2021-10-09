@@ -1,6 +1,8 @@
 # BookStore
 
-I lay foundations for Bookstore website. I create a React and Redux app. I structure the files using the "feature folder" approach. Also I set up routing using React Router, I configure the Redux Store, the reducer for adding and removing books. My application is connected to an existing API.
+This website is a React and Redux app. It is simply an adding and removing books store. Thank you to the ZEPLIN website for the UI provided. This application works with an existing API.  
+
+![WebImages](./images/bookshop.png)
 
 # Getting Started with Create React App
 

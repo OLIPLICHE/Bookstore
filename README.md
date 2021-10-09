@@ -1,6 +1,6 @@
 # BookStore
 
-I lay foundations for Bookstore website. I create a React and Redux app. I structure the files using the "feature folder" approach. Also I set up routing using React Router, I configure the Redux Store, the reducer for adding and removing books.
+I lay foundations for Bookstore website. I create a React and Redux app. I structure the files using the "feature folder" approach. Also I set up routing using React Router, I configure the Redux Store, the reducer for adding and removing books. My application is connected to an existing API.
 
 # Getting Started with Create React App
 

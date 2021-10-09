@@ -1,14 +1,17 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux';
+import {
+  createStore, combineReducers, applyMiddleware, compose,
+} from 'redux';
 import logger from 'redux-logger';
-import booksReducer from './books/books';
+import thunk from 'redux-thunk';
+import bookReducer from './books/books';
 
 const reducer = combineReducers({
-  booksReducer,
+  books: bookReducer,
 });
 
 const store = createStore(
   reducer,
-  applyMiddleware(logger),
+  compose(applyMiddleware(thunk), applyMiddleware(logger)),
 );
 
 export default store;

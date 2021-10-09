@@ -7,7 +7,7 @@ const AddNewBook = ({ addBookToStoreProps }) => {
   const [formInputs, setFormInputs] = useState({
     id: uuid(),
     title: '',
-    author: '',
+    category: '',
   });
 
   const onChange = (e) => {
@@ -19,11 +19,11 @@ const AddNewBook = ({ addBookToStoreProps }) => {
 
   const addBook = (e) => {
     e.preventDefault();
-    if (formInputs.title && formInputs.author) {
+    if (formInputs.title && formInputs.category) {
       const newBook = {
-        id: uuid(),
+        item_id: uuid(),
         title: formInputs.title,
-        author: formInputs.author,
+        category: formInputs.category,
       };
       addBookToStoreProps(newBook);
     }
@@ -41,10 +41,10 @@ const AddNewBook = ({ addBookToStoreProps }) => {
       />
       <input
         type="text"
-        name="author"
-        placeholder="Author"
+        name="category"
+        placeholder="Category"
         onChange={onChange}
-        value={formInputs.author}
+        value={formInputs.category}
         required
       />
       <button type="button" onClick={addBook}>Add New Book</button>

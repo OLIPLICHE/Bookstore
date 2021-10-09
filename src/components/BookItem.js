@@ -3,21 +3,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const BookItem = ({ book, removeBookFromStoreProps }) => (
-  <li key={book.id}>
+  <li key={book.item_id}>
     <p>
       {book.title}
       <span>
-        {' ' }
-        {' '}
-        by
-        {' '}
-        { book.title}
+      &nbsp;in&nbsp;
+        {book.category}
+        &nbsp;category
       </span>
     </p>
     <button
       type="button"
       onClick={() => {
-        removeBookFromStoreProps(book.id);
+        removeBookFromStoreProps(book.item_id);
       }}
     >
       Remove
@@ -27,9 +25,9 @@ const BookItem = ({ book, removeBookFromStoreProps }) => (
 
 BookItem.propTypes = {
   book: PropTypes.shape({
-    id: PropTypes.number.isRequired,
+    item_id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    author: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
   }).isRequired,
 
   removeBookFromStoreProps: PropTypes.func.isRequired,

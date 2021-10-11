@@ -40,7 +40,7 @@ const BookItem = ({ book, removeBookFromStoreProps }) => (
       <div className="book-item__chapter">
         <p className="book-item__chapter-title">CURRENT CHAPTER</p>
         <p className="book-item__chapter-number">
-          Chapter 17: &ldquo;The Silent One&rdquo;
+          Chapter 1: &ldquo;Introduction&rdquo;
         </p>
         <button className="book-item__chapter-btn" type="button">
           UPDATE PROGRESS

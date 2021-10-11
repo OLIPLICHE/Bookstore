@@ -82,7 +82,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - React and redux
 
 ## Live Demo
-[Live Demo Link]( https://olipliche.github.io/Bookstore/)
+[Live Demo Link](https://paka-bookstore-app.netlify.app/)
 
 ## Author
 👤 **Olipliche Mavoungou Paka**
@@ -93,8 +93,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 Contributions, issues, and feature requests are welcome!
 
 ## Show your support
-Give a ⭐️ if you like this project!
-
+Give a ⭐️ if you like this project
 ## Acknowledgments
 - Hat tip to anyone whose code was used
 - Inspiration

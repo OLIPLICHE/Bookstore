@@ -53,7 +53,7 @@ const AddNewBook = ({ addBookToStoreProps }) => {
             value={formInputs.category}
             required
           />
-          <button type="button" onClick={addBook} className="add-form__btn">Add New Book</button>
+          <button type="button" onClick={addBook} className="add-form__btn">Add Book</button>
         </div>
       </form>
     </>

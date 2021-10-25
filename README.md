@@ -1,6 +1,6 @@
 # BookStore
 
-This website is a React and Redux app. It is simply an adding and removing books store. Thank you to the ZEPLIN website for the UI provided. This application works with an existing API.  
+This website is a React and Redux app. It is simply a store in which users can add adding and removing books. Thank you to the ZEPLIN website for the UI provided. This application works with an existing API.  
 
 ![WebImages](./images/bookshop.png)
 
